@@ -1,0 +1,83 @@
+
+
+.container {
+   display: flex;
+   flex-direction: column;
+   width: 500px;
+   height: 400px;
+   border: solid 1px #000000;
+   display: flex;
+   align-items: center;
+   border-radius: 7%;
+   box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.2);
+   background-color: white
+   ;
+}
+
+h1 {
+   margin: 30px 0 0 0;
+   font-size: 50px;
+}
+
+
+.imput_div {
+   height: fit-content;
+   margin: 15px 0 20px 0;
+
+}
+
+.password_imput--box {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+}
+
+.password_imput--button {
+background: none;
+margin: 8.5px 0 0 -38px;
+}
+
+svg {
+   height: 30px;
+   width: 30px;
+   color: white;
+}
+
+
+
+h2 {
+   font-size: 22px;
+   margin: 0 0 0 13px;
+}
+
+.imput {
+   width: 400px;
+   height: 35px;
+   border: solid 1px #000000;
+   margin: 5px 0 0 0;
+   border-radius: 20px;
+   padding: 0 0px 0 15px;
+}
+
+.button_div {
+   margin: 30px 0 0 0;
+}
+
+.button {
+   width: 120px;
+   height: 50px;
+   border: 1px solid #000000;
+   border-radius: 20px;
+   font-size: 20px;
+   transition: 0.2s;
+}
+
+.button:first-child {
+   margin: 0 30px 0 0;
+}
+
+.button:hover {
+   color: #ffff;
+   background-color: #000000;
+}
