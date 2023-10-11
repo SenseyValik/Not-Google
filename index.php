@@ -4,11 +4,11 @@ require "vendor/autoload.php";
 
 $loader = new \Twig\Loader\FilesystemLoader('resources/twing_templates');
 
-$twig = new \Twig\Environment($loader, [
-    'cache' => 'cache/compilation_cache',
-]);
+$twig = new \Twig\Environment($loader
+    //, ['cache' => 'cache/compilation_cache',]
+);
 
-echo $twig->render('index.html', ['name' => 'Fabien']);
+echo $twig->render('index.html');
 
 ?>
 
