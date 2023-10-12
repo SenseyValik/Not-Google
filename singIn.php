@@ -16,8 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-
-
     if ($result->num_rows >= 1) {
         $row = $result->fetch_row();
         // Successful login, set a session variable to indicate the user is logged in

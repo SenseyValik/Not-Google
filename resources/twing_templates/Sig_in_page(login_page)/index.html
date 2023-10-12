@@ -20,16 +20,15 @@
    <div class="container">
       <h1>Sign in</h1>
       <div class="main">
-         <form action="">
+         <form action="singIn.php" method="POST">
             <div class="imput_div">
                <h2>Email</h2>
-               <input type="email" class="imput" placeholder="Write your email" name="name" required-placeholder />
+               <input type="email" class="imput" placeholder="Write your email" name="email" required />
             </div>
             <div class="imput_div">
                <h2>Password</h2>
                <div class="password_imput--box">
-                  <input type="password" class="imput" placeholder="Write your password" name="name"
-                         required-placeholder />
+                  <input type="password" class="imput" placeholder="Write your password" name="password" required />
                </div>
             </div>
       </div>
@@ -38,7 +37,7 @@
          <button class="button">Submit</button>
       </div>
       <div class="signup_box">
-         <a href="/resources/twing_templates/Sign_up_page/index.html" class="signup_button">Sign up</a>
+         <a href="singUp.php" class="signup_button">Sign up</a>
       </div>
       </form>
 
