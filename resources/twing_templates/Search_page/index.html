@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/notGoogleIcon.ico">
-    <title>Not google</title>
+    <link rel="icon" type="image/x-icon" href="/images/mainIco.ico">
+    <title>Mindes keep</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -16,14 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Love+Ya+Like+A+Sister&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Love+Ya+Like+A+Sister&display=swap">
         </head>
 
 <body>
-<div class="container" style="margin-left=0px;margin-left: 10px;width: 161px;height: 30px;margin-top: 15px;">
-    <p style="margin-top: 15px;">{{ username }}</p></div>
-    <div class="wrapper">
-        <div class="container">
+<div class="container user-name"><p style="margin-top: 15px;">{{ username }}</p><div id="userId" style="display: none">{{ userId }}</div></div>
+    <div class="wrapper wrapper-main">
+        <div class="container main">
             <div class="google-logo">
                 <h1>Mindes Keep</h1>
             </div>
@@ -38,8 +37,17 @@
             </div>
         </div>
     </div>
+
+    <div class="my-container">
+        <div class="container note">
+        </div>
+    </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/resources/js/index.js"></script>
 </body>
 
 </html>

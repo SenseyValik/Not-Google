@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Successful login, set a session variable to indicate the user is logged in
         $_SESSION["loggedin"] = true;
         $_SESSION['UserName'] = $row[3];
+        $_SESSION['userId'] = $row[0];
         header("Location: index.php"); // Redirect to a welcome page
     } else {
         // Invalid credentials, display an error message
