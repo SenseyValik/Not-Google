@@ -1,5 +1,5 @@
 <?php
-require "/vendor/autoload.php";
+require "vendor/autoload.php";
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result) {
         session_start();
         // Successful login, set a session variable to indicate the user is logged in
-        $_SESSION['UserName'] = $nameui;
+        $_SESSION['UserName'] = $name;
         $_SESSION["loggedin"] = true;
         header("Location: index.php");
         exit();

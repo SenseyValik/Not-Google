@@ -10,17 +10,22 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/resources/css/reset.css">
-    <link rel="stylesheet" href="/resources/css/global.css">
+    <link rel="stylesheet" href="/resources/css//global.css">
     <link rel="stylesheet" href="/resources/css/search_page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Love+Ya+Like+A+Sister&display=swap"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Love+Ya+Like+A+Sister&display=swap">
-        </head>
+</head>
 
 <body>
-<div class="container user-name"><p style="margin-top: 15px;">{{ username }}</p><div id="userId" style="display: none">{{ userId }}</div></div>
+    <div class="container user-name">
+        <p style="margin-top: 15px;">{{ username }}</p>
+        <div id="userId" style="display: none">{{ userId }}</div>
+    </div>
     <div class="wrapper wrapper-main">
         <div class="container main">
             <div class="google-logo">
@@ -30,21 +35,37 @@
                 <form action="search.php" method="GET">
                     <input type="text" class="search-box" name="request" title="Search" autofocus required>
                     <div class="button_div">
-                        <button type="submit" class="search-button">Remind</button>
                         <button type="submit" class="search-button">Add Keep</button>
                     </div>
                 </form>
             </div>
         </div>
+
     </div>
 
-    <div class="my-container">
-        <div class="container note">
+
+    <div class="note-div">
+
+        <div class="note-container" id="modal-container">
+            <h3>'+item[0]+'</h3>
+            <p>'+item[1]+' </p>
+            <div class="modal" id="my-modal">
+                <div class="modal__box"> <button class="modal__close-btn" id="close-my-modal-btn"> <svg width="13"
+                            height="13" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+                                fill="#333333" />
+                            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z"
+                                fill="#333333" />
+                        </svg> </button> <input placeholder="Write title" class="modal_box--title"></input> <textarea
+                        placeholder="Write your note" name="" id="" cols="35" rows="10"></textarea> </div>
+            </div>
         </div>
     </div>
 
 
 
+    <script src="/resources/js/search.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/resources/js/index.js"></script>
